@@ -1,4 +1,4 @@
-# DigipolisDevopsDays Docker examples
+# DigipolisDevopsDays Docker introduction
 
 This repository was used during a Docker introduction session at Digipolis. 
 The goal of this session was to give a brief introduction into Docker. 
