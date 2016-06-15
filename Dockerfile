@@ -7,15 +7,6 @@ ADD ./application /app
 WORKDIR /app
 
 
-EXPOSE 8080
+EXPOSE 80
 
 CMD ["go","run","app.go"]
-
-
-
-
-# docker build -t devopsdays .
-# docker rmi $(docker images -q)
-
-# docker run --rm --name devopsdays -t -p 8000:80 devopsdays
-# docker rm -f $(docker ps -a -q)

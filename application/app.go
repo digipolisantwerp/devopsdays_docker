@@ -4,10 +4,18 @@ import (
 	"io"
 	"net/http"
 	"log"
+	"os"
 )
 
 func hello(w http.ResponseWriter, r *http.Request) {
-	io.WriteString(w, "Hello world!")
+	// get the hostname
+	name, err := os.Hostname()
+	if err != nil {
+			panic(err)
+	}
+	// send webserver response
+	io.WriteString(w, "Hello world from "+ name +" !")
+
 	log.Println("Request received")
 }
 
